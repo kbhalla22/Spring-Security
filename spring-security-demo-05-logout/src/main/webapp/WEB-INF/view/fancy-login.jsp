@@ -54,13 +54,12 @@
 										<div class="alert alert-danger col-xs-offset-1 col-xs-10">
 											Invalid username and password.</div>
 									</c:if>
+									<!-- checking for logout -->
+									<c:if test="${param.logout !=null}">
+										<div class="alert alert-success col-xs-offset-1 col-xs-10">
+											You have been logged out.</div>
 
-									<!--		            
-									<div class="alert alert-success col-xs-offset-1 col-xs-10">
-										You have been logged out.
-									</div>
-								    -->
-
+									</c:if>
 								</div>
 							</div>
 						</div>
