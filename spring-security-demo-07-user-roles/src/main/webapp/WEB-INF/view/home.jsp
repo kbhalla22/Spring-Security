@@ -1,4 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags"%>
 
 	<html>
 
@@ -13,6 +14,15 @@
 <p>
 Welcome to the luv2code company Home Page
 </p>
+<hr>
+<!-- display username and role -->
+
+<p>
+User:<security:authentication property="principal.username"/>
+<br><br>
+Role(s): <security:authentication property="principal.authorities"/>
+</p>
+<hr>
 
 
 <!-- add a logout button -->
